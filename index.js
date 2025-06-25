@@ -18,15 +18,15 @@ app.use(express.json());
 app.use(cors());
 
 //5.Routes
-app.use("/api", authRoutes);    //This line connects your forgot-password route
+app.use("/api", authRoutes); //This line connects your forgot-password route
 
 //6.Test Route
-app.get("/", (req,res)=>{
-    res.send("Password Reset Flow API is running...");
+app.get("/", (req, res) => {
+  res.send("Password Reset Flow API is running...");
 });
 
 //7.Start the server
 const Port = process.env.PORT || 4000;
-app.listen(Port, ()=>{
-    console.log(`Server started and running on the ${Port}`);
+app.listen(Port, () => {
+  console.log(`Server started and running on the ${Port}`);
 });

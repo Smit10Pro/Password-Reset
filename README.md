@@ -33,17 +33,18 @@ This is the **backend server** of a full-stack authentication and password reset
 
 ## 🔗 API Endpoints
 
-| Method | Route                     | Description              |
-|--------|---------------------------|--------------------------|
-| POST   | /api/register             | Register new user        |
-| POST   | /api/login                | Login and get token      |
-| POST   | /api/forgot-password      | Send reset link          |
-| POST   | /api/reset-password       | Reset password           |
+| Method | Route                | Description         |
+| ------ | -------------------- | ------------------- |
+| POST   | /api/register        | Register new user   |
+| POST   | /api/login           | Login and get token |
+| POST   | /api/forgot-password | Send reset link     |
+| POST   | /api/reset-password  | Reset password      |
 
 ---
 
 ## 🧪 Testing
 
 You can test the backend using:
+
 - ✅ **Postman** (send requests manually)
 - ✅ **Frontend React App** (connected via Axios)

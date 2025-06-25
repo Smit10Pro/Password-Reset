@@ -1,6 +1,12 @@
 //This file sets up the route for forgot password
 import express from "express";
-import { forgotPassword, loginUser, logoutUser, registerUser, resetPassword } from "../Controllers/auth.Controller.js";
+import {
+  forgotPassword,
+  loginUser,
+  logoutUser,
+  registerUser,
+  resetPassword,
+} from "../Controllers/auth.Controller.js";
 
 const router = express.Router();
 
@@ -17,6 +23,6 @@ router.post("/forgot-password", forgotPassword);
 router.post("/reset-password/:token", resetPassword);
 
 //logout route
-router.post("/logout", logoutUser)
+router.post("/logout", logoutUser);
 
 export default router;
