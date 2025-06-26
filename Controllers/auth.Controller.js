@@ -97,7 +97,7 @@ export const forgotPassword = async (req, res) => {
     await user.save(); //Save the user with token info
 
     //5.Create a special reset link with the token
-    const resetLink = `https://password-reset-frontend-delta.vercel.app/${token}`; //This will be used by React
+    const resetLink = `https://password-reset-frontend-delta.vercel.app/reset-password/${token}`; //This will be used by React
 
     // console.log(resetLink);
 
